@@ -1,0 +1,53 @@
+
+.container.fluid{
+    width:90%;
+    margin:auto;
+
+}
+.table-responsive{
+    max-height:700px;
+    box-shadow:black 0px 25px 50px -12px;
+
+}
+tr:hover{
+    background-color:white;
+}
+td,
+th{
+    position:relative;
+}
+.table td,
+.table th{
+    padding:0.75rem;
+    verticle-align:top;
+    border-top:none;
+
+}
+td:hover::after,
+th:hover::after{
+    content:"";
+    position:absolute;
+    background-color:whitesmoke;
+    left:0;
+    top:-5000px;
+    height:5000px;
+    width:100%;
+    z-index:-1;
+}
+.table tr td:hover:nth-child(4){
+    background-color:rgb(219, 9, 9);
+    color:aliceblue;
+    border:0.5px solid black;
+}
+.table tr td:hover{
+    background-color:rgb(26, 205, 236);
+    color:whitesmoke;
+    border:0.5px solid black;
+
+}
+.thead-dark{
+    font-weight:bold;
+    text-transform:uppercase;
+    background-color:rgb(180, 50, 141);
+
+}
